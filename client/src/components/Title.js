@@ -3,8 +3,13 @@ import React from 'react';
 export default function Title(props) {
 	return(
 		<div>
-			<h1>What Do You Need?</h1>
-			<p>Tell us what you need, and we'll find someone to help you.</p>
+			<h1 style={{
+				fontWeight: 'bold',
+				fontSize: '50px',
+				color: 'white',
+				marginBottom: '10px'
+			}}>{props.header}</h1>
+			<p style={{ color: 'white' }}>{props.subheader}</p>
 		</div>
 	)
 }
